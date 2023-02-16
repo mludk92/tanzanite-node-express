@@ -32,3 +32,4 @@ app.listen(port, () => {
 })
 
 // node server/server.js ----run this to start up 
+// can run localhost:5001 in browser now to view the applicaiton 
