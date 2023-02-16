@@ -6,7 +6,29 @@
 // creates node_modules ----not not modify this folder do not add to source control
 // now make a new .gitignore 
 
+//steps in order
+//  npm init --yes 
+//npm install express 
+// make a new .gitignore with this info maybe more 
+        // node_modeules/
+        // .DS_Store
+
 
 //Require Express 
-
 const express = require('express')
+
+const app = express()
+
+// Heroku assigns us a unique PORT 
+// use 5001 for local host devolopment 
+const port = process.env.PORT || 5001
+
+//show where files are stored
+app.use(express.static('server/public'))
+
+//tell where to listen for request
+app.listen(port, () => { 
+    console.log(`listening on port ${port}`)
+})
+
+
