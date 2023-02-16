@@ -31,4 +31,4 @@ app.listen(port, () => {
     console.log(`listening on port ${port}`)
 })
 
-
+// node server/server.js ----run this to start up 
